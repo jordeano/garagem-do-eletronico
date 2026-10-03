@@ -46,18 +46,12 @@ function productById(id) {
 ====================================== */
 
 function getMedia(p) {
-
-  // Se existir media, usa o novo sistema
-  if (Array.isArray(p.media) && p.media.length > 0) {
-    return p.media;
-  }
-
-  // Compatibilidade com produtos antigos
-  if (p.image) {
-    return [p.image];
-  }
-
-  return [];
+  // Mantém a foto principal e acrescenta as mídias extras na sequência.
+  // O Set evita repetir a foto caso ela também esteja em `media`.
+  const media = Array.isArray(p.media) ? p.media : [];
+  return [...new Set([p.image, ...media].filter(
+    src => typeof src === 'string' && src.trim()
+  ).map(src => src.trim()))];
 }
 
 function isVideo(src) {
