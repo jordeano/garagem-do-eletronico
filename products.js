@@ -43,28 +43,29 @@ const PRODUCTS = [
     featured: false,
     badge: 'OFERTA',
 
-    image: '',
-    media: [],
+    image: 'img/IMG-FER-001.webp',
+    media: ['img/IMG1-FER-001.webp'],
 
     description: 'Jogo de chaves para tarefas domésticas e manutenção.'
   },
 
-  {
-    id: 'INF-001',
-    name: 'Roteador Wi-Fi — Testado',
-    category: 'Informática',
-    condition: 'seminovo',
-    price: 59.90,
-    stock: 1,
-    featured: true,
-    badge: 'ACHADO',
-
-    image: '',
-    media: [],
-
-    description: 'Equipamento usado e testado. Estado e acessórios conforme fotos. Consulte o modelo disponível.'
-  },
-
+//{
+// id: 'INF-001',
+//  name: 'Roteador Wi-Fi — Testado',
+//  
+// category: 'Informática',
+// condition: 'seminovo',
+// price: 59.90,
+//stock: 1,
+// featured: true,
+// badge: 'ACHADO',
+//
+//   image: '',
+//   media: [],
+//
+//   description: 'Equipamento usado e testado. Estado e acessórios conforme fotos. Consulte o modelo disponível.'
+ // },
+///
   {
     id: 'GAM-001',
     name: 'Controle USB para PC',
