@@ -246,6 +246,48 @@ function imageFor(p) {
    CARD DO PRODUTO
 ====================================== */
 
+function formatDescription(text = '') {
+  const raw = String(text || '').trim();
+
+  if (!raw) return '';
+
+  const escapeHtml = value => value.replace(/[&<>"']/g, character => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[character]);
+
+  const items = raw
+    .split(/\n+/)
+    .map(item => item.trim())
+    .filter(Boolean)
+    .map(item => item.replace(/^[-•*]\s*/, ''))
+    .map(escapeHtml);
+
+  if (items.length > 1) {
+    return `
+      <ul class="feature-list">
+        ${items.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+    `;
+  }
+
+  return escapeHtml(raw)
+    .replace(/\s*\|\s*/g, '<br>')
+    .replace(/\n/g, '<br>');
+}
+
+function descriptionDrawer(p) {
+  return `
+    <details class="description-drawer">
+      <summary>Ver descrição</summary>
+      <div class="description-content">${formatDescription(p.description)}</div>
+    </details>
+  `;
+}
+
 function productCard(p) {
 
   const available = p.stock > 0;
@@ -271,7 +313,7 @@ function productCard(p) {
 
         <h3>${p.name}</h3>
 
-        <p>${p.description}</p>
+        ${descriptionDrawer(p)}
 
         <div class="condition">
           ${available ? '● Disponível' : '● Vendido'}
@@ -573,7 +615,7 @@ function showDetails(id) {
         ${p.name}
       </h2>
 
-      <p>${p.description}</p>
+      ${descriptionDrawer(p)}
 
       <div class="modal-meta">
 

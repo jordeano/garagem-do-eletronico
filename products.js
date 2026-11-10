@@ -18,19 +18,19 @@
 const PRODUCTS = [
 
   {
-    id: 'EL-001',
-    name: 'Carregador USB-C 20W',
-    category: 'Eletrônicos',
+    id: 'PASS-001',
+    name: 'Passadeira a vapor Mondial',
+    category: 'Ferramentas',
     condition: 'novo',
-    price: 49.90,
-    stock: 3,
+    price: 280,
+    stock: 2,
     featured: true,
-    badge: 'NOVO',
+    badge: 'ACHADO',
 
-    image: '',
-    media: [],
+    image: 'img/PASS.webp',
+    media: ['img/PASS1.webp'],
 
-    description: 'Carregador compacto USB-C de 20W. Consulte compatibilidade com seu aparelho.'
+    description: '✨ Passadeira a vapor Mondial\n• Desamassa sem precisar de tábua\n• Vapor potente para diversos tecidos\n• Ideal para camisas, vestidos, ternos e cortinas\n• Cabide ajustável e reservatório removível\n• Produto novo e pronto para uso'
   },
 
   {
@@ -38,7 +38,7 @@ const PRODUCTS = [
     name: 'Jogo de Chaves 6 peças',
     category: 'Ferramentas',
     condition: 'novo',
-    price: 39.90,
+    price: 40.90,
     stock: 2,
     featured: false,
     badge: 'OFERTA',
@@ -46,7 +46,7 @@ const PRODUCTS = [
     image: 'img/IMG-FER-001.webp',
     media: ['img/IMG1-FER-001.webp'],
 
-    description: 'Jogo de chaves para tarefas domésticas e manutenção.'
+    description: '⚠️⚠️⚠️VENDO KIT DE CHAVES⚠️⚠️⚠️⚠️ Especificações do: Avulso;- 46 PEÇAS; Estojo termocolante de plástico; Ferramentas de aço cromo vanádio; Medidas 24x13x5 (L, L, A); Peso 1.080kg Encaixes hexagonais padrão 1/4"- Encaixes hexagonais padrão 1/4" Lista de embalagem da embalagem: 14”: Avulso - 4 mm - 4,5 mm - 5,5 mm -6 mm -7 mm; Leve - 8 mm-9 mm-10 mm- 12 mm-13 mm-14 mm; Tomada 21 COM Bits: Ponta de fenda: 4 mm - 5,5 mm-7 mm; Dica Hexagonal: 3 mm - 4 mm -6 mm-7 mm- Dica Hexagonal: 3 mm - 4 mm - 5 mm- 6 mm-7 mm-8 mm-8 mm Ponta Philips: 1-3; Ponta Pozi: 1-3; Ponta de Torx: T10- T15-T20-T25 -T30-T40; Chaves sextavadas L: 1,5 mm - 2 mm - 2,5 mm; Cabo Fixo 74"; Extensão 50 mm (2") e Extensão 100 mm (4"); Extensão Flexível 150 mm (6"); Catraca Reversível 14" com Lançamento Rápido: 15 x 2,7 x2,3 cm - 01 Catraca Reversível 14" com Lançamento Rápido: 15 x 2,7 x 2,3 cm. -01 Cabo de Alimentação T; -01 Junta Universal; -01 Bit Adaptador, Mala- 01 Maleta Valor 40 reais.'
   },
 
 //{
@@ -67,51 +67,35 @@ const PRODUCTS = [
  // },
 ///
   {
-    id: 'GAM-001',
-    name: 'Controle USB para PC',
-    category: 'Games',
+    id: 'XRE-001',
+    name: 'HONDA XRE 300 2014',
+    category: 'Ferramentas',
     condition: 'novo',
-    price: 69.90,
+    price: 19500,
     stock: 2,
     featured: true,
-    badge: 'NOVO',
+    badge: 'ACHADO',
 
-    image: '',
-    media: [],
+    image: 'img/XRE.jpeg',
+    media: ['img/XRE1.webp'],
 
-    description: 'Controle USB para computador e jogos compatíveis.'
+    description: '🏍️ HONDA XRE 300 2014 À VENDA 🔴 Ano: 2014 📍 Km: 37.000 km 📍 Local: Itamarandiba – MG 💰 Valor: R$ 19.500 Moto muito bem cuidada, de uso no dia a dia e bem conservada. Uma XRE forte, confortável e confiável, ótima tanto para cidade quanto para estrada. ✅ 37 mil km ✅ Moto bem cuidada ✅ Pronta para uso ✅ Documentação em dia 💰 R$ 19.500 🔄 Estudo trocas — dependendo da proposta. 📲 Interessados podem chamar no WhatsApp para mais informações e fotos..'
   },
 
   {
-    id: 'SEM-001',
-    name: 'Caixa de som portátil',
-    category: 'Seminovos',
-    condition: 'seminovo',
-    price: 79.90,
-    stock: 1,
+    id: 'PARA-001',
+    name: 'Parafusadeira e furadeira sem fio 12V Luatek',
+    category: 'Ferramentas',
+    condition: 'novo',
+    price: 150,
+    stock: 2,
     featured: true,
-    badge: 'TESTADO',
+    badge: 'ACHADO',
 
-    image: '',
-    media: [],
+    image: 'img/FUR1.webp',
+    media: ['img/IMG FUR.webp'],
 
-    description: 'Produto seminovo, testado e funcionando. Pequenos sinais de uso podem existir.'
+    description: '📢 Parafusadeira e furadeira sem fio 12V\n• Bateria de lítio recarregável\n• Luz LED para ambientes com pouca iluminação\n• Controle de torque para maior precisão\n• Duas velocidades e reversão de giro\n• Ideal para montagens, reformas e pequenos reparos\n• Produto novo e pronto para uso'
   },
-
-  {
-    id: 'INF-002',
-    name: 'Memória RAM DDR3 4GB',
-    category: 'Informática',
-    condition: 'usado',
-    price: 35.00,
-    stock: 1,
-    featured: false,
-    badge: 'TESTADO',
-
-    image: '',
-    media: [],
-
-    description: 'Memória usada, testada antes da venda. Confirme compatibilidade com seu computador.'
-  }
 
 ];
